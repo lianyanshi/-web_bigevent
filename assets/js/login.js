@@ -12,6 +12,8 @@ $(function() {
   })
 
   // 从 layui 中获取 form 对象
+  
+  
   var form = layui.form
   var layer = layui.layer
   // 通过 form.verify() 函数自定义校验规则
@@ -42,6 +44,7 @@ $(function() {
     }
     $.post('/api/reguser', data, function(res) {
       if (res.status !== 0) {
+       
         return layer.msg(res.message)
       }
       layer.msg('注册成功，请登录！')
