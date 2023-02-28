@@ -1,10 +1,10 @@
+
 $(function() {
   // 调用 getUserInfo 获取用户基本信息
   getUserInfo()
 
-  var layer = layui.layer
-
   // 点击按钮，实现退出功能
+ 
   $('#btnLogout').on('click', function() {
     // 提示用户是否确认退出
     layer.confirm('确定退出登录?', { icon: 3, title: '提示' }, function(index) {
